@@ -1,14 +1,14 @@
-# Vite + React + ESLint + TanStack Router Template
+# Vite + React 19 + ESLint + TanStack Router Template
 
-A modern, production-ready template for building React applications with TypeScript, featuring:
+A modern, production-ready template for building React applications with JavaScript, featuring:
 
 ## 🚀 Features
 
 - **⚡ Vite** - Fast build tool and development server
-- **⚛️ React 18** - Latest React with TypeScript support
+- **⚛️ React 19** - Latest React with JavaScript support
 - **🛣️ TanStack Router** - Type-safe routing with file-based routing
-- **🔍 ESLint** - Code linting with TypeScript support
-- **📦 TypeScript** - Full TypeScript configuration
+- **🔍 ESLint** - Code linting with React support
+- **📦 JavaScript** - Full JavaScript configuration with JSConfig
 - **🎯 Development Tools** - Router devtools included
 
 ## 📁 Project Structure
@@ -16,11 +16,11 @@ A modern, production-ready template for building React applications with TypeScr
 ```
 src/
 ├── routes/           # File-based routing
-│   ├── __root.tsx   # Root layout component
-│   ├── index.tsx    # Home page
-│   └── about.tsx    # About page
+│   ├── __root.jsx   # Root layout component
+│   ├── index.jsx    # Home page
+│   └── about.jsx    # About page
 ├── assets/          # Static assets
-├── main.tsx         # Application entry point
+├── main.jsx         # Application entry point
 └── index.css        # Global styles
 ```
 
@@ -31,7 +31,6 @@ src/
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 - `npm run lint:fix` - Fix ESLint issues
-- `npm run type-check` - Run TypeScript type checking
 
 ## 🚦 Getting Started
 
@@ -51,10 +50,10 @@ src/
 
 TanStack Router uses file-based routing. To add a new route:
 
-1. Create a new file in `src/routes/` (e.g., `contact.tsx`)
+1. Create a new file in `src/routes/` (e.g., `contact.jsx`)
 2. Export a route using `createFileRoute`:
 
-```tsx
+```jsx
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/contact')({
@@ -70,8 +69,8 @@ function Contact() {
 
 ## 🔧 Configuration
 
-- **Vite Config**: `vite.config.ts`
-- **TypeScript**: `tsconfig.json` & `tsconfig.node.json`
+- **Vite Config**: `vite.config.js`
+- **JavaScript**: `jsconfig.json`
 - **ESLint**: `.eslintrc.cjs`
 
 ## 📚 Learn More
@@ -79,4 +78,4 @@ function Contact() {
 - [Vite Documentation](https://vitejs.dev/)
 - [React Documentation](https://react.dev/)
 - [TanStack Router](https://tanstack.com/router)
-- [TypeScript](https://www.typescriptlang.org/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
