@@ -6,7 +6,7 @@ import { TanStackRouterVite } from '@tanstack/router-plugin/vite'
 export default defineConfig({
   plugins: [
     TanStackRouterVite({
-      generatedRouteTree: './src/routeTree.gen.js'
+      generatedRouteTree: './src/routeTree.gen.ts'
     }),
     react(),
   ],
